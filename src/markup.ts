@@ -44,7 +44,7 @@ export function markupOneCountry({
 
 // function producing markup for more then one country
 export function markupSomeCountries({ name: { official }, flags: { svg } }: Country): string {
-  const markup: string = `<div class="country-item">
+  const markup: string = `<li class="country-item">
   <img
    src="${svg}"
    alt="flag"
@@ -52,7 +52,7 @@ export function markupSomeCountries({ name: { official }, flags: { svg } }: Coun
    height="30"
    class="country-item__img"
   /><span class="country-item__name">${official}</span>
- </div>
+ </li>
 `;
   return markup;
 }

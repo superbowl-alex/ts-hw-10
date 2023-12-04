@@ -42,7 +42,6 @@ function onSearch(e: Event): void {
 
 // markup render function on positive search result
 function render(data: Country[]): void {
-  console.log(data);
   // if the backend returned more than 10 countries
   if (numberOfCountries > 10) {
     Notiflix.Notify.info(
